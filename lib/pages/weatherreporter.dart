@@ -508,31 +508,32 @@ class WeatherReporter extends StatelessWidget {
           BottomNavigationBarItem(
               icon: Icon(
                 FlutterIcon.clouds,
-                color: Colors.blueAccent,
+                color: Colors.white,
               ),
               title: Text("天气",
-                  style: TextStyle(fontSize: 14.0, color: Colors.blueAccent))),
+                  style: TextStyle(fontSize: 14.0, color: Colors.white)),
+                  backgroundColor: Colors.black),
           BottomNavigationBarItem(
               icon: Icon(
                 FlutterIcon.compass,
-                color: Colors.blueAccent,
+                color: Colors.white,
               ),
               title: Text("时景",
-                  style: TextStyle(fontSize: 14.0, color: Colors.blueAccent))),
+                  style: TextStyle(fontSize: 14.0, color: Colors.white))),
           BottomNavigationBarItem(
               icon: Icon(
                 FlutterIcon.eclipse,
-                color: Colors.blueAccent,
+                color: Colors.white,
               ),
               title: Text("小视频",
-                  style: TextStyle(fontSize: 14.0, color: Colors.blueAccent))),
+                  style: TextStyle(fontSize: 14.0, color: Colors.white))),
           BottomNavigationBarItem(
               icon: Icon(
                 FlutterIcon.hail,
-                color: Colors.blueAccent,
+                color: Colors.white,
               ),
               title: Text("我",
-                  style: TextStyle(fontSize: 14.0, color: Colors.blueAccent)))
+                  style: TextStyle(fontSize: 14.0, color: Colors.white)))
         ],
         fixedColor: Colors.orange,
       ),
@@ -695,7 +696,6 @@ class WeatherInfo extends StatelessWidget {
                 ),
               ),
             ),
-            
 
             //大风预警
             Ink(
