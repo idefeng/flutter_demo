@@ -4,8 +4,8 @@ import 'dart:convert';
 import 'package:day1stopwatch/utils/carousel.dart';
 import 'package:day1stopwatch/utils/flutter_icon_icons.dart';
 
-class WeatherRepoter extends StatelessWidget {
-  WeatherRepoter({Key key, this.cityData}) : super(key: key);
+class WeatherReporter extends StatelessWidget {
+  WeatherReporter({Key key, this.cityData}) : super(key: key);
 
   final cityData;
   final _weatherData = jsonDecode('''

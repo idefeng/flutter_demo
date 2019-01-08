@@ -4,7 +4,7 @@ import 'package:day1stopwatch/pages/day01.dart';
 import 'package:day1stopwatch/pages/day02.dart';
 import 'package:day1stopwatch/utils/flutter_icon_icons.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:day1stopwatch/pages/weatherrepoter.dart';
+import 'package:day1stopwatch/pages/weatherreporter.dart';
 
 
 class MyHomePage extends StatelessWidget {
@@ -53,7 +53,7 @@ class MyHomePage extends StatelessWidget {
         children: <Widget>[
           menuIcons(context, Icon(FontAwesomeIcons.stopwatch, size: 48.0, color: Color(0xFFFF856C)), 'Day1' ,Day1Page()),
           menuIcons(context, Icon(FlutterIcon.cloud_sun_inv, size: 48.0, color: Color(0xFF90BDC1)), 'Day2' ,Day2Page()),
-          menuIcons(context, Icon(FlutterIcon.cloud_sun_inv, size: 48.0, color: Color(0xFF90BDC1)), "Weather", WeatherRepoter()),
+          menuIcons(context, Icon(FlutterIcon.cloud_sun_inv, size: 48.0, color: Color(0xFF90BDC1)), "Weather", WeatherReporter()),
           // menuIcons(context, Icon(FontAwesomeIcons.twitter, size: 48.0, color: Color(0xFF2AA2EF)), 'Day3' ,Day3Page()),
           // menuIcons(context, Icon(FontAwesomeIcons.contao, size: 48.0, color: Color(0xFFFF9A05)), 'Day4' ,Day0Page()),
           // menuIcons(context, Icon(Icons.pin_drop, size: 48.0, color: Color(0xFF00D204)), 'Day5' ,Day5Page()),
