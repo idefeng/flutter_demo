@@ -597,7 +597,7 @@ class WeatherInfo extends StatelessWidget {
               height: 40.0,
               width: 160.0,
               decoration: BoxDecoration(
-                  color: Color(0xFF000000),
+                  color: Colors.red,
                   // border: Border.all(color: Colors.white54),
                   borderRadius: BorderRadius.circular(5.0)),
               child: InkWell(

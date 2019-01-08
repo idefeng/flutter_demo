@@ -89,12 +89,12 @@ class Day1PageState extends State<Day1Page> {
             return IconButton(
               icon: Icon(Icons.chevron_left),
               tooltip: "返回",
-              onPressed: (){
+              onPressed: () {
                 Navigator.pop(context);
               },
             );
           },
-        ), 
+        ),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -183,7 +183,6 @@ class WatchControl extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return WatchControlState();
   }
 }
