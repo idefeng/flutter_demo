@@ -594,25 +594,28 @@ class WeatherInfo extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Ink(
-              height: 40.0,
-              width: 160.0,
-              decoration: BoxDecoration(
-                  color: Colors.red,
-                  // border: Border.all(color: Colors.white54),
-                  borderRadius: BorderRadius.circular(5.0)),
-              child: InkWell(
-                borderRadius: BorderRadius.circular(35.0),
-                child: Center(
-                  child: Text(
-                    "中国队2:1胜XX队",
-                    style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 16.0),
-                    textAlign: TextAlign.center,
+            Container(
+                // height: 40.0,
+                // width: 160.0,
+                decoration: BoxDecoration(
+                    color: Colors.black12,
+                    // border: Border.all(color: Colors.white54),
+                    borderRadius: BorderRadius.circular(15.0)),
+                child: Padding(
+                  padding: EdgeInsets.only(left: 10.0, right: 10.0,top: 3.0, bottom: 3.0),
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(35.0),
+                    child: Center(
+                      child: Text(
+                        "中国队2:1胜XX队",
+                        style:
+                            TextStyle(color: Color(0xFFFFFFFF), fontSize: 16.0),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    onTap: () {},
                   ),
-                ),
-                onTap: () {},
-              ),
-            ),
+                )),
           ],
         )
       ],
