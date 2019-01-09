@@ -512,7 +512,7 @@ class WeatherReporter extends StatelessWidget {
               ),
               title: Text("天气",
                   style: TextStyle(fontSize: 14.0, color: Colors.white)),
-                  backgroundColor: Colors.black),
+              backgroundColor: Colors.black),
           BottomNavigationBarItem(
               icon: Icon(
                 FlutterIcon.compass,
@@ -656,71 +656,78 @@ class WeatherInfo extends StatelessWidget {
         ),
         //空气质量与大风预警
         Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.only(top: 30.0),
-              child: Ink(
-                height: 40.0,
-                width: 120,
-                decoration: BoxDecoration(
-                  color: Color(0xFF000000),
-                  borderRadius: BorderRadius.circular(5.0),
-                ),
+              padding: EdgeInsets.only(top: 30.0, bottom: 10.0, right: 5.0),
+              child: Container(
+                  // height: 30.0,
+                  // width: 100,
+                  decoration: BoxDecoration(
+                    color: Colors.blueGrey,
+                    borderRadius: BorderRadius.circular(3.0),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.all(5.0),
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(3.0),
+                      onTap: () {},
+                      child: Row(
+                        //空气质量
+                        children: <Widget>[
+                          Text(
+                            "| ",
+                            style: TextStyle(
+                                color: Colors.orange,
+                                fontSize: 14.0,
+                                fontWeight: FontWeight.w900),
+                          ),
+                          Text(
+                            "优 ",
+                            style: TextStyle(
+                                color: Color(0xFFFFFFFF), fontSize: 14.0),
+                          ),
+                          Text(
+                            "40",
+                            style: TextStyle(
+                                color: Color(0xFFFFFFFF), fontSize: 14.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )),
+            ),
+
+            //大风预警
+            Container(
+              // height: 30.0,
+              // width: 100,
+              decoration: BoxDecoration(
+                color: Colors.blueGrey,
+                borderRadius: BorderRadius.circular(3.0),
+              ),
+              child: Padding(
+                padding: EdgeInsets.all(5.0),
                 child: InkWell(
-                  borderRadius: BorderRadius.circular(5.0),
+                  borderRadius: BorderRadius.circular(3.0),
                   onTap: () {},
                   child: Row(
-                    //空气质量
                     children: <Widget>[
                       Text(
                         "| ",
                         style: TextStyle(
-                            color: Colors.orange,
-                            fontSize: 16.0,
+                            color: Colors.green,
+                            fontSize: 14.0,
                             fontWeight: FontWeight.w900),
                       ),
                       Text(
-                        "优 ",
+                        "大风预警111",
                         style:
-                            TextStyle(color: Color(0xFFFFFFFF), fontSize: 16.0),
-                      ),
-                      Text(
-                        "40",
-                        style:
-                            TextStyle(color: Color(0xFFFFFFFF), fontSize: 18.0),
+                            TextStyle(color: Color(0xFFFFFFFF), fontSize: 14.0),
                       ),
                     ],
                   ),
-                ),
-              ),
-            ),
-
-            //大风预警
-            Ink(
-              height: 60.0,
-              width: 120,
-              decoration: BoxDecoration(
-                color: Color(0xFF000000),
-                borderRadius: BorderRadius.circular(5.0),
-              ),
-              child: InkWell(
-                borderRadius: BorderRadius.circular(5.0),
-                onTap: () {},
-                child: Row(
-                  children: <Widget>[
-                    Text(
-                      "| ",
-                      style:
-                          TextStyle(color: Colors.green, fontSize: 16.0,fontWeight: FontWeight.w900),
-                    ),
-                    Text(
-                      "大风预警",
-                      style:
-                          TextStyle(color: Color(0xFFFFFFFF), fontSize: 16.0),
-                    ),
-                  ],
                 ),
               ),
             ),
@@ -804,7 +811,8 @@ class WeatherInfo extends StatelessWidget {
             const ListTile(
               leading: Icon(Icons.album),
               title: Text('Card控件来占位'),
-              subtitle: Text('Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位'),
+              subtitle: Text(
+                  'Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位'),
             ),
             ButtonTheme.bar(
               // make buttons use the appropriate styles for cards
