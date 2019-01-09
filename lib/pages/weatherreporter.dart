@@ -567,7 +567,7 @@ class WeatherInfo extends StatelessWidget {
               children: <Widget>[
                 //定位地点
                 Padding(
-                  padding: EdgeInsets.only(left: 5.0),
+                  padding: EdgeInsets.only(left: 5.0,),
                   child: Text("东城区 中粮恒基夹道",
                       style:
                           TextStyle(fontSize: 16.0, color: Color(0xFFFFFFFF))),

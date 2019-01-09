@@ -17,3 +17,4 @@ samples, guidance on mobile development, and a full API reference.
 # flutter_demo
 - Day01:计时器demo
 - Day02: 仿iOS原生天气APP界面
+- Weather: 仿iOS版墨迹天气的界面（Day02 demo的扩展练习）
