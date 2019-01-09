@@ -602,17 +602,22 @@ class WeatherInfo extends StatelessWidget {
                     // border: Border.all(color: Colors.white54),
                     borderRadius: BorderRadius.circular(15.0)),
                 child: Padding(
-                  padding: EdgeInsets.only(left: 10.0, right: 10.0,top: 3.0, bottom: 3.0),
+                  padding: EdgeInsets.only(
+                      left: 10.0, right: 10.0, top: 3.0, bottom: 3.0),
                   child: InkWell(
                     borderRadius: BorderRadius.circular(35.0),
                     child: Center(
-                      child: Text(
-                        "中国队2:1胜XX队",
-                        style:
-                            TextStyle(color: Color(0xFFFFFFFF), fontSize: 16.0),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
+                        child: Row(
+                      children: <Widget>[
+                        Icon(Icons.beenhere, size: 13.0, color: Colors.white,),
+                        Text(
+                          "中国队2:1胜XX队",
+                          style: TextStyle(
+                              color: Color(0xFFFFFFFF), fontSize: 16.0),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
+                    )),
                     onTap: () {},
                   ),
                 )),
