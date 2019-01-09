@@ -792,7 +792,7 @@ class WeatherInfo extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+              padding: EdgeInsets.only(top: 15.0, bottom: 20.0),
               child: Row(
                 children: <Widget>[
                   Text(
@@ -812,34 +812,37 @@ class WeatherInfo extends StatelessWidget {
 
     //动态图片
     var fourthSection = Container(
-      child: Card(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            const ListTile(
-              leading: Icon(Icons.album),
-              title: Text('Card控件来占位'),
-              subtitle: Text(
-                  'Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位'),
-            ),
-            ButtonTheme.bar(
-              // make buttons use the appropriate styles for cards
-              child: ButtonBar(
-                children: <Widget>[
-                  FlatButton(
-                    child: const Text('Card控件来占位'),
-                    onPressed: () {/* ... */},
-                  ),
-                  FlatButton(
-                    child: const Text('Card控件来占位'),
-                    onPressed: () {/* ... */},
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
+      child: Container(
+        child: null,
+      )
+      // Card(
+      //   child: Column(
+      //     mainAxisSize: MainAxisSize.min,
+      //     children: <Widget>[
+      //       const ListTile(
+      //         leading: Icon(Icons.album),
+      //         title: Text('Card控件来占位'),
+      //         subtitle: Text(
+      //             'Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位'),
+      //       ),
+      //       ButtonTheme.bar(
+      //         // make buttons use the appropriate styles for cards
+      //         child: ButtonBar(
+      //           children: <Widget>[
+      //             FlatButton(
+      //               child: const Text('Card控件来占位'),
+      //               onPressed: () {/* ... */},
+      //             ),
+      //             FlatButton(
+      //               child: const Text('Card控件来占位'),
+      //               onPressed: () {/* ... */},
+      //             ),
+      //           ],
+      //         ),
+      //       ),
+      //     ],
+      //   ),
+      // ),
     );
 
     //底部，今天明天天气
