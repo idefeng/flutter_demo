@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'dart:convert';
 import 'package:day1stopwatch/utils/carousel.dart';
 import 'package:day1stopwatch/utils/flutter_icon_icons.dart';
+import 'package:day1stopwatch/Data/WeatherData.dart';
 
 class WeatherReporter extends StatelessWidget {
   WeatherReporter({Key key, this.cityData}) : super(key: key);
@@ -570,7 +571,7 @@ class WeatherInfo extends StatelessWidget {
                   padding: EdgeInsets.only(left: 5.0,),
                   child: Text("东城区 中粮恒基夹道",
                       style:
-                          TextStyle(fontSize: 16.0, color: Color(0xFFFFFFFF))),
+                          TextStyle(fontSize: 14.0, color: Color(0xFFFFFFFF))),
                 ),
                 //定位图标
                 Padding(
@@ -599,7 +600,7 @@ class WeatherInfo extends StatelessWidget {
                 // width: 160.0,
                 decoration: BoxDecoration(
                     color: Colors.black12,
-                    // border: Border.all(color: Colors.white54),
+                    border: Border.all(color: Colors.white54),
                     borderRadius: BorderRadius.circular(15.0)),
                 child: Padding(
                   padding: EdgeInsets.only(
@@ -611,9 +612,9 @@ class WeatherInfo extends StatelessWidget {
                       children: <Widget>[
                         Icon(Icons.beenhere, size: 13.0, color: Colors.white,),
                         Text(
-                          "中国队2:1胜XX队",
+                          "中国队2:1胜XX队11111111",
                           style: TextStyle(
-                              color: Color(0xFFFFFFFF), fontSize: 16.0),
+                              color: Color(0xFFFFFFFF), fontSize: 14.0),
                           textAlign: TextAlign.center,
                         ),
                       ],
