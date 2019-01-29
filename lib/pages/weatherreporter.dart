@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:day1stopwatch/utils/carousel.dart';
 import 'package:day1stopwatch/utils/flutter_icon_icons.dart';
 import 'package:day1stopwatch/Data/WeatherData.dart';
+import 'package:http/http.dart' as http;
 
 class WeatherReporter extends StatelessWidget {
   WeatherReporter({Key key, this.cityData}) : super(key: key);
@@ -568,7 +569,9 @@ class WeatherInfo extends StatelessWidget {
               children: <Widget>[
                 //定位地点
                 Padding(
-                  padding: EdgeInsets.only(left: 5.0,),
+                  padding: EdgeInsets.only(
+                    left: 5.0,
+                  ),
                   child: Text("东城区 中粮恒基夹道",
                       style:
                           TextStyle(fontSize: 14.0, color: Color(0xFFFFFFFF))),
@@ -610,7 +613,11 @@ class WeatherInfo extends StatelessWidget {
                     child: Center(
                         child: Row(
                       children: <Widget>[
-                        Icon(Icons.beenhere, size: 13.0, color: Colors.white,),
+                        Icon(
+                          Icons.beenhere,
+                          size: 13.0,
+                          color: Colors.white,
+                        ),
                         Text(
                           "中国队2:1胜XX队11111111",
                           style: TextStyle(
@@ -813,38 +820,9 @@ class WeatherInfo extends StatelessWidget {
 
     //动态图片
     var fourthSection = Container(
-      child: Container(
-        child: null,
-      )
-      // Card(
-      //   child: Column(
-      //     mainAxisSize: MainAxisSize.min,
-      //     children: <Widget>[
-      //       const ListTile(
-      //         leading: Icon(Icons.album),
-      //         title: Text('Card控件来占位'),
-      //         subtitle: Text(
-      //             'Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位Card控件来占位'),
-      //       ),
-      //       ButtonTheme.bar(
-      //         // make buttons use the appropriate styles for cards
-      //         child: ButtonBar(
-      //           children: <Widget>[
-      //             FlatButton(
-      //               child: const Text('Card控件来占位'),
-      //               onPressed: () {/* ... */},
-      //             ),
-      //             FlatButton(
-      //               child: const Text('Card控件来占位'),
-      //               onPressed: () {/* ... */},
-      //             ),
-      //           ],
-      //         ),
-      //       ),
-      //     ],
-      //   ),
-      // ),
-    );
+        child: Container(
+      child: null,
+    ));
 
     //底部，今天明天天气
     var fifthSection = Container(
