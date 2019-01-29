@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:convert';
-import 'package:day1stopwatch/utils/carousel.dart';
+// import 'package:day1stopwatch/utils/carousel.dart';
 import 'package:day1stopwatch/utils/flutter_icon_icons.dart';
 import 'package:day1stopwatch/Data/WeatherData.dart';
 import 'package:http/http.dart' as http;
+import 'package:day1stopwatch/components/bottom_navigation_widget.dart';
 
 class WeatherReporter extends StatelessWidget {
   WeatherReporter({Key key, this.cityData}) : super(key: key);
@@ -505,40 +506,7 @@ class WeatherReporter extends StatelessWidget {
       body: WeatherInfo(
         cityData: _weatherData,
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-              icon: Icon(
-                FlutterIcon.clouds,
-                color: Colors.white,
-              ),
-              title: Text("天气",
-                  style: TextStyle(fontSize: 14.0, color: Colors.white)),
-              backgroundColor: Colors.black),
-          BottomNavigationBarItem(
-              icon: Icon(
-                FlutterIcon.compass,
-                color: Colors.white,
-              ),
-              title: Text("时景",
-                  style: TextStyle(fontSize: 14.0, color: Colors.white))),
-          BottomNavigationBarItem(
-              icon: Icon(
-                FlutterIcon.eclipse,
-                color: Colors.white,
-              ),
-              title: Text("小视频",
-                  style: TextStyle(fontSize: 14.0, color: Colors.white))),
-          BottomNavigationBarItem(
-              icon: Icon(
-                FlutterIcon.hail,
-                color: Colors.white,
-              ),
-              title: Text("我",
-                  style: TextStyle(fontSize: 14.0, color: Colors.white)))
-        ],
-        fixedColor: Colors.orange,
-      ),
+      bottomNavigationBar: BottomNavigationWidget(),
       floatingActionButton: FloatingActionButton(
         tooltip: 'Back', // used by assistive technologies
         child: Icon(Icons.arrow_back),
